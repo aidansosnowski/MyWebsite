@@ -1,0 +1,129 @@
+body{
+    background-color: #131316;
+    
+    font-family: 'Poppins',sans-serif;
+    padding: 0;
+    margin:0;
+}
+section
+{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+section:first-of-type{
+    background-image: url(images/testing.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    background-size: auto;
+}
+h1{
+    left: 0;
+    line-height: 160px;
+    margin-top: -110px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    font-family: monospace;
+    font-size: 60px;
+    color: #d6d6d6;
+}
+h2{
+    left: 0;
+    line-height: 160px;
+    margin-top: -110px;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    width: 100%;
+    font-family: monospace;
+    font-size: 60px;
+    color: #d6d6d6;
+}
+h3{
+    margin-top: 15px;
+    font-family: monospace;
+    font-size: 30px;
+    color: #d6d6d6;
+}
+p1{
+    margin-top: 15px;
+    font-family: monospace;
+    font-size: 20px;
+    color: #d6d6d6;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    
+}
+#container div{
+    height: 525px;
+    width: 375px;
+    background: #3f3f3f;
+    margin: 50px;
+    text-align: center;
+    border-radius: 25px;
+}
+#container div:first-of-type{
+    background-image: url(images/Screenshot\ 2023-10-10\ 132541.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 75%;
+}
+#container div:nth-of-type(2){
+    background-image: url(images/Microsoft\ Visual\ Studio\ 10_10_2023\ 1_36_56\ PM.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 52%;
+}
+#container div:nth-of-type(3){
+    background-image: url(images/Screenshot\ 2023-10-10\ 131919.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 80%;
+}
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: 200ms;
+    transform: translateX(0);
+}
+.buttons{
+    display: flex;
+}
+.button{
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    overflow: hidden;
+}
+ion-icon {
+    font-size: 64px;
+    color: #d6d6d6;
+  }
+.button:nth-child(2){
+    transition-delay: 200ms;
+}
+.button:nth-child(3){
+    transition-delay: 400ms;
+}
